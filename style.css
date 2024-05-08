@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  
+--Paleblue: hsl(225, 100%, 94%);
+--Brightblue: hsl(245, 75%, 52%);
+--Verypaleblue: hsl(225, 100%, 98%);
+--Desaturatedblue: hsl(224, 23%, 55%);
+--Darkblue: hsl(223, 47%, 23%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('./images/pattern-background-mobile.svg'), var(--Paleblue);
+    background-repeat: no-repeat;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.order_container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 27.5rem;
+    margin: 1rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px 15px 10px rgba(0, 0, 255, 0.16) ;
+
+}
+
+.header_image img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.order_summary {
+    padding: 2rem 1rem 0 1rem;
+}
+
+.order_summary h1 {
+    color: var(--Darkblue);
+}
+
+.order_summary p {
+    padding: 1rem;
+    font-weight: bold;
+    line-height: 1.75rem;
+    color: var(--Desaturatedblue);
+}
+
+.payment_plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+    background-color: var(--Verypaleblue);
+    border-radius: 10px;
+    padding: 1rem 0;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.plan_name {
+    text-align: start;
+}
+
+.payment_plan h2 {
+    font-size: 1rem;
+    color: var(--Darkblue);
+}
+
+.payment_plan p {
+    color: var(--Desaturatedblue);
+}
+
+.payment_plan a {
+    font-weight: bold;
+}
+
+.payment_plan a:hover {
+    color: #766CF1;
+}
+
+.cta_buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+.proceed button {
+    border: none;
+    background-color: var(--Brightblue);
+    width: 100%;
+    padding: 1rem;
+    margin-top: .5rem;
+    border-radius: 10px;
+    box-shadow: 0px 15px 10px rgba(0, 0, 255, 0.16) ;
+}
+
+.proceed button:hover {
+    background-color: #766CF1;
+    cursor: pointer;
+}
+
+.proceed button a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.cancel_btn {
+    margin: 2rem 0;
+}
+
+.cancel_btn a {
+    text-decoration: none;
+    color: var(--Desaturatedblue);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.cancel_btn a:hover {
+    color: var(--Darkblue);
+}
+
+@media only screen and (min-width: 767px) {
+    body {
+        background: url('./images/pattern-background-desktop.svg'), var(--Paleblue);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
